@@ -39,20 +39,27 @@ Route::get('addtocart/{id}',function($id){
 
     return Redirect::back()->withErrors(['msg', 'The Message']);
 
-});
+})->middleware('auth');
 
+
+
+Route::get('cartdel/{id}', function ($id) {
+    DB::delete('DELETE FROM cart where id = ?', [$id]);
+    return Redirect::back()->withErrors(['msg', 'The Message']);
+});
 
 Route::get('/cart',function( ){
     $items = DB::select('SELECT * FROM `cart` JOIN food on cart.food_id = food.id WHERE user_id = ?  ', [Auth::user()->id]);
     return view('cart')->with(compact(('items')));
-});
+})->middleware('auth');
+
 
 
 Route::get('/cart/clear',function( ){
     DB::delete('DELETE FROM  cart where user_id = ?', [Auth::user()->id]);
     return Redirect::back()->withErrors(['msg', 'The Message']);
 
-});
+})->middleware('auth');
 
 
 

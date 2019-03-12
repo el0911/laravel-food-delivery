@@ -43,10 +43,10 @@
 
 				<div class="top_pannel_menu_right">
 
-						<a class="btn top_pannel_btn" href="https://theme355-pizza.myshopify.com/pages/contact-us">Previous Orders</a>
+						<!-- <a class="btn top_pannel_btn" href="https://theme355-pizza.myshopify.com/pages/contact-us">Previous Orders</a> -->
                         <script src="https://cdn.shopify.com/s/javascripts/currencies.js" defer></script>
 						<script src="https://cdn.shopify.com/s/files/1/2321/3015/t/2/assets/currency-tools.js?2215465451326053447" defer></script>
-                        <div class="header_search">
+                        <!-- <div class="header_search">
 							<span class="header_search_trigger"><i class="material-design-search100"></i></span>
 
 							<form action="https://theme355-pizza.myshopify.com/search" method="get" role="search" class="search_form">
@@ -56,12 +56,12 @@
 									<i class="material-design-search100"></i>
 								</button>
 							</form>
-						</div>
+						</div> -->
 
 
 
 						<div class="top_pannel_cart">
-							<a href="https://theme355-pizza.myshopify.com/cart" title="Cart"><i class="material-design-shopping232"></i></a>
+							<a href="/cart" title="Cart"><i class="material-design-shopping232"></i></a>
 						</div>
 
 				</div>

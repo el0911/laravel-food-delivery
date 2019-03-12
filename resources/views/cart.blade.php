@@ -142,7 +142,7 @@ $totalprice = $totalprice + $item->price;
 
                                     </div>
 
-                                    <a class="btn cart_item__remove" href="/cart/change?line=1&amp;quantity=0">Remove</a>
+                                    <a class="btn cart_item__remove" href="/cartdel/{{$item->id}}">Remove</a>
                                 </td>
 
                                 <td class="column_price">
@@ -152,7 +152,7 @@ $totalprice = $totalprice + $item->price;
                                 <td class="column_quantity">
                                     <div class="quantity_box">
                                         <input id="updates_462455406619:1384d099b0fd21b08b7ec4380985a058" name="updates[]"
-                                            value="1" class="quantity_input" type="text">
+                                            value="{{$item->quantity}}" class="quantity_input" type="text">
 
                                         <span class="quantity_down"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                         <span class="quantity_up"><i class="fa fa-plus" aria-hidden="true"></i></span>

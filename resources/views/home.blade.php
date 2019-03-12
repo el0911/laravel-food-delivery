@@ -229,7 +229,7 @@
                             <div class="swiper-slide">
                                 <div class="product_item">
                                     <div class="product_img">
-                                        <a class="img_change" href="https://theme355-pizza.myshopify.com/collections/burger-builder">
+                                        <a class="img_change">
                                             <img class="img_1" src="https://cdn.shopify.com/s/files/1/2321/3015/collections/burger_270x295_crop_top.png?v=1504268490"
                                                 alt="Burger builder">
                                         </a>
